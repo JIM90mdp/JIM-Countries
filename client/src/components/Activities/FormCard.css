@@ -1,0 +1,35 @@
+.card-form-container{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card-form_flag{
+    height: 150px;
+    width: 150px;
+}
+
+.card-form-container__btn-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card-form-container__x-button{
+    width: 20px;
+    margin: 6px;
+    padding: 1px;
+    height: 20px;
+    border: none;
+    color: #f44336;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #00000057;
+}
