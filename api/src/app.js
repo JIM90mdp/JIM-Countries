@@ -17,7 +17,7 @@ server.use(cookieParser());
 server.use(morgan("dev"));
 server.use((req, res, next) => {
   // package.json "start": "node index.js" // "start": "nodemon -L",
-  res.header('Access-Control-Allow-Origin', 'https://jim-countries.vercel.app'); // update to match the domain you will make the request from
+  res.header('Access-Control-Allow-Origin', 'https://jim-countries-vbeb.vercel.app'); // update to match the domain you will make the request from
   // res.header("Access-Control-Allow-Origin", "http://localhost:3000");
   res.header("Access-Control-Allow-Credentials", "true");
   res.header(
