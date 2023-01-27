@@ -11,21 +11,38 @@ import "../Filter/filters.css";
 export default function Filters() {
   const dispatch = useDispatch();
   const [filter, setFilter] = useState();
+  const [hiddenState, setHiddenState] = useState(false);
 
   useEffect(() => {
     dispatch(getActivitiesByName(filter));
     dispatch(setCurrentPage(1));
   }, [dispatch, filter]);
 
+  const handleButton = () => {
+    setHiddenState(!hiddenState);
+  };
+
+  const hiddenClass = hiddenState ? "filters-container__filters-visible" : "filters-container__filters-hidden";
   return (
     <div className="filters__container">
-      <AZOrder />
+      <button
+        className="filters-container__hidden-content"
+        onClick={() => {
+          handleButton();
+        }}
+      >
+        {" "}
+        Filters{" "}
+      </button>
+      <div className={`${hiddenClass}`}>
+        <AZOrder />
 
-      <PopOrder />
+        <PopOrder />
 
-      <ContinentFilter />
+        <ContinentFilter />
 
-      <ActivityFilter setFilter={setFilter} />
+        <ActivityFilter setFilter={setFilter} />
+      </div>
     </div>
   );
 }

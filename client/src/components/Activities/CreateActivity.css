@@ -3,7 +3,7 @@
 
   border: 2px solid rgba(255, 255, 255, 0.254);
   background-color: #f1e8e840;
-  border-radius: 40px;
+  border-radius: 20px;
   
   width: 300px;
   top: 100px;
@@ -31,6 +31,34 @@
     0 6px 0 #242424, 
     0 7px 0 #222, 
     0 8px 30px rgba(0, 0, 0, 0.9);
+}
+
+.activity-container__create-button{
+  display: block;
+  position: relative;
+
+  color: rgb(248 247 247);
+  border: 2px solid rgba(255, 255, 255, 0.254);
+  background-color: #ffffff1f;
+  font-size: 16px;
+  font-weight: 400;
+
+  font-weight: 400;
+  color: #e0dfdc;
+  letter-spacing: 0.1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424,
+    0 7px 0 #222, 0 8px 30px rgba(0, 0, 0, 0.9);
+
+  border-radius: 20px;
+  width: 160px;
+  height: 65px;
+  padding: 5px;
+  margin: 8px;
+
+  opacity: 1;
+  cursor: pointer;
+  text-align: center;
 }
 
 .activity-container input {
@@ -136,7 +164,18 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #50555C;
 }
-
+.filters-container__activity-hidden{
+  font-weight: 400;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
 .activity-container__activity-form {
   font-weight: 400;
   color: white;
@@ -145,6 +184,8 @@ input[type=range]:focus::-ms-fill-upper {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-height: 500px;
+  overflow: visible;
 }
 
 .activity-container__buttons-div {

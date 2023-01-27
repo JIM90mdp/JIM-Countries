@@ -20,6 +20,8 @@ export default function CreateActivity() {
     error: false,
   });
 
+  const [hiddenState, setHiddenState] = useState(false);
+
   const [activityForm, setActivityForm] = useState({
     name: "",
     difficulty: 1,
@@ -157,11 +159,24 @@ export default function CreateActivity() {
     }
   };
 
+  const handleButton = () => {
+    setHiddenState(!hiddenState);
+  };
+
+  const hiddenClass = hiddenState ? "activity-container__activity-form" : "filters-container__activity-hidden";
+
   return (
     <div className="activity-container">
-      <span className="create_h1">Crate Activity</span>
+      <button
+        className="activity-container__create-button"
+        onClick={() => {
+          handleButton();
+        }}
+      >
+        Crate Activity
+      </button>
       <form
-        className="activity-container__activity-form"
+        className={`${hiddenClass}`}
         onSubmit={(e) => {
           handleSubmit(e);
         }}
@@ -232,7 +247,9 @@ export default function CreateActivity() {
             })}
           </select>
           {errorState.seasonError && (
-            <div className="activity-container__error">You must choose a season</div>
+            <div className="activity-container__error">
+              You must choose a season
+            </div>
           )}
         </div>
         <div className="activity-container__countries-div activity-container__parameters">
@@ -255,7 +272,9 @@ export default function CreateActivity() {
                 })}
           </select>
           {errorState.countryError && (
-            <div className="activity-container__error">You must choose a country</div>
+            <div className="activity-container__error">
+              You must choose a country
+            </div>
           )}
         </div>
         <div className="activity-container__buttons-div activity-container__parameters">
