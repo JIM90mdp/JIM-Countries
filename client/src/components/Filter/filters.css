@@ -31,12 +31,6 @@
   display: none;
 }
 
-.filters-container__filters-hidden {
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-around;
-}
 .filters-container__filters-visible {
   align-items: center;
   flex-direction: row;
@@ -79,7 +73,7 @@
 
   .filters-container__filters-hidden {
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     justify-content: space-around;
     max-height: 0;

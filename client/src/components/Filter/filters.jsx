@@ -11,7 +11,7 @@ import "../Filter/filters.css";
 export default function Filters() {
   const dispatch = useDispatch();
   const [filter, setFilter] = useState();
-  const [hiddenState, setHiddenState] = useState(false);
+  const [hiddenState, setHiddenState] = useState(true);
 
   useEffect(() => {
     dispatch(getActivitiesByName(filter));
