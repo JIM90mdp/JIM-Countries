@@ -32,9 +32,10 @@
 }
 
 .filters-container__filters-hidden {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
 }
 .filters-container__filters-visible {
   align-items: center;
@@ -75,6 +76,12 @@
   /* .filters-container__hidden-content {
   
   } */
+
+  .filters-container__filters-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
 
   .filters-container__hidden-content {
     display: block;
