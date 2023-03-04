@@ -16,10 +16,13 @@ export default function CountryDetails() {
   }, [dispatch, id]);
 
   function formatNumber(num) {
-    return parseInt(num).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+    return parseInt(num)
+      .toString()
+      .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
   }
 
   const details = useSelector((state) => state.details);
+  console.log("Country Details details: ", details);
   const {
     name,
     flag,
@@ -30,6 +33,7 @@ export default function CountryDetails() {
     area,
     population,
     activities,
+    startDate,
   } = details;
 
   return (
@@ -61,8 +65,14 @@ export default function CountryDetails() {
           <div>
             {activities?.map((a) => {
               return (
-                <div key={a.id} className="activities-container__activity-card-container">
-                  <div className="activity-card-container__props-container" key="123213123">
+                <div
+                  key={a.id}
+                  className="activities-container__activity-card-container"
+                >
+                  <div
+                    className="activity-card-container__props-container"
+                    key="123213123"
+                  >
                     <div className="props-container__key-prop" key="33">
                       Name Activity:{" "}
                     </div>
@@ -72,7 +82,10 @@ export default function CountryDetails() {
                     </div>
                   </div>
 
-                  <div className="activity-card-container__props-container" key="121113">
+                  <div
+                    className="activity-card-container__props-container"
+                    key="121113"
+                  >
                     <div className="props-container__key-prop" key="3333">
                       Difficulty:
                     </div>
@@ -89,7 +102,10 @@ export default function CountryDetails() {
                     </div>
                   </div>
 
-                  <div className="activity-card-container__props-container" key="1232222">
+                  <div
+                    className="activity-card-container__props-container"
+                    key="1232222"
+                  >
                     <div className="props-container__key-prop" key="1555523">
                       Duration:
                     </div>
@@ -98,7 +114,24 @@ export default function CountryDetails() {
                     </div>
                   </div>
 
-                  <div className="activity-card-container__props-container" key="133323">
+                  <div
+                    className="activity-card-container__props-container"
+                    key="123213123"
+                  >
+                    <div className="props-container__key-prop" key="33">
+                      Date:{" "}
+                    </div>
+                    <div className="props-container__value-prop" key="33ss3">
+                    {a.startDate === null
+                        ? "Undefined date"
+                        : a.startDate }
+                    </div>
+                  </div>
+
+                  <div
+                    className="activity-card-container__props-container"
+                    key="133323"
+                  >
                     <div className="props-container__key-prop" key="144423">
                       Season:
                     </div>

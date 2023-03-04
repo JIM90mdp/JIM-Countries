@@ -12,22 +12,19 @@ export default function SiteNav() {
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!clicked);
-    dispatch(burgerState({ burger: true }));
   };
 
   return (
     <div className="site-nav__container">
       <Link to="/" className="site-nav__link">
-        <button>JIM+ Landing</button>
+        <button>JIM+'s Landing</button>
       </Link>
       <SearchBar />
       <Link to="/about" className="site-nav__link">
         <button>About</button>
       </Link>
       <div className="site-nav__burger">
-        <Link to="/menu">
-          <BurgerBtn clicked={clicked} handleClick={handleClick} />
-        </Link>
+        <BurgerBtn clicked={clicked} handleClick={handleClick} />
       </div>
     </div>
   );

@@ -45,6 +45,7 @@
   position: relative;
 
   color: rgb(248 247 247);
+  text-shadow: 2px 2px #000000;
   border: 2px solid rgba(255, 255, 255, 0.254);
   background-color: #ffffff1f;
   font-size: 16px;
@@ -52,17 +53,7 @@
 
   font-weight: 400;
   color: #e0dfdc;
-  letter-spacing: .1em;
-  text-shadow: 
-    0 -1px 0 #fff, 
-    0 1px 0 #2e2e2e, 
-    0 2px 0 #2c2c2c, 
-    0 3px 0 #2a2a2a, 
-    0 4px 0 #282828, 
-    0 5px 0 #262626, 
-    0 6px 0 #242424, 
-    0 7px 0 #222, 
-    0 8px 30px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.1em;
 
   border-radius: 20px;
   width: 160px;
@@ -124,7 +115,7 @@
   color: #00ffdce5;
   width: auto;
   max-height: 400px;
-  
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -136,18 +127,18 @@
 }
 
 .cards-container__form-card-container::-webkit-scrollbar {
-  background-color: transparent ;
+  background-color: transparent;
   width: 12px;
 }
 
 .cards-container__form-card-container::-webkit-scrollbar-track {
-  background-color: transparent ;
+  background-color: transparent;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
 .cards-container__form-card-container::-webkit-scrollbar-thumb {
-  background-color: transparent ;
+  background-color: transparent;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
@@ -176,19 +167,22 @@
     flex-direction: column;
   }
 
-  .home__container::-webkit-scrollbar,.right-column__cards-container::-webkit-scrollbar  {
-    background-color: transparent ;
+  .home__container::-webkit-scrollbar,
+  .right-column__cards-container::-webkit-scrollbar {
+    background-color: transparent;
     width: 12px;
   }
-  
-  .home__container::-webkit-scrollbar-track,.right-column__cards-container::-webkit-scrollbar-track  {
-    background-color: transparent ;
+
+  .home__container::-webkit-scrollbar-track,
+  .right-column__cards-container::-webkit-scrollbar-track {
+    background-color: transparent;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
   }
-  
-  .home__container::-webkit-scrollbar-thumb,.right-column__cards-container::-webkit-scrollbar-thumb  {
-    background-color: transparent ;
+
+  .home__container::-webkit-scrollbar-thumb,
+  .right-column__cards-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   }
@@ -199,20 +193,21 @@
     flex-direction: column;
   }
 
-  .left-column__create_activity_container{
+  .left-column__create_activity_container {
     width: 100%;
     height: auto;
   }
 
-  .left-column__btn-container{
+  .left-column__btn-container {
     display: none;
   }
-  .columns__right-column,.columns__left-column {
+  .columns__right-column,
+  .columns__left-column {
     position: relative;
     top: 10px;
     left: 10px;
     width: auto;
-  
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -225,9 +220,6 @@
     max-height: auto;
     width: 90%;
     top: 60px;
-    /* align-items: center;
-    justify-content: space-between; */
-    /* flex-direction: column; */
     overflow-y: scroll;
     flex: 1;
   }
@@ -240,7 +232,7 @@
     bottom: -60px;
   }
 
-  .cards-container__form-card-container{
+  .cards-container__form-card-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -251,6 +243,4 @@
 /* |   |   |   |   MEDIA QUERY   -   TABLET    |   |   |   | */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-  
 }

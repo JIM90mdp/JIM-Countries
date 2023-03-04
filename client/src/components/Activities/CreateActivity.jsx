@@ -14,7 +14,7 @@ export default function CreateActivity() {
   const allCountries = useSelector((state) => state.countries);
   // const allErrors = useSelector((state)=> state.error)
 
-  const seasons = ["summer", "autumn", "winter", "spring"];
+  const seasons = ["summer", "autumn", "winter", "spring", "all year"];
 
   const [errorState, setErrorState] = useState({
     error: false,
@@ -28,6 +28,7 @@ export default function CreateActivity() {
     duration: 1,
     season: "",
     countryId: [],
+    startDate: null,
   });
 
   useEffect(() => {
@@ -110,6 +111,7 @@ export default function CreateActivity() {
       duration: 1,
       season: "",
       countryId: [],
+      startDate: "",
     });
   };
 
@@ -251,6 +253,19 @@ export default function CreateActivity() {
               You must choose a season
             </div>
           )}
+        </div>
+        <div className="activity-container__season-div activity-container__parameters">
+          <label> Start Date: </label>
+          <input
+            className="parameters__input-select"
+            type="date"
+            id=""
+            name="startDate"
+            onChange={handleChange}
+            value={activityForm.startDate}
+            autoComplete="off"
+            />
+          
         </div>
         <div className="activity-container__countries-div activity-container__parameters">
           <label>Countries </label>
