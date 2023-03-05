@@ -8,8 +8,6 @@ import { BrowserRouter } from "react-router-dom";
 import store from "./redux/store";
 
 ReactDOM.render(
-  //Envolvemos la app con el enrutador: BrowserRouter, necesario para proporcionar rutas. 
-  //Envolvemos la app con el Provider para utilizar los estados de Redux y despachar acciones
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
