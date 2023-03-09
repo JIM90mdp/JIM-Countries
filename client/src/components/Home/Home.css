@@ -70,6 +70,8 @@
 }
 .left-column__create_activity_container {
   width: 500px;
+  /* clear:both; */
+  float: left;
 }
 
 /*|   |   |   |   RIGHT COLUMN    |   |   |   | */

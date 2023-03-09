@@ -38,14 +38,12 @@ export default function Home() {
   );
 
   useEffect(() => {
-    console.log("/Home - useEffect");
     dispatch(getCountries());
     dispatch(orderByPopulation("All"));
     dispatch(setCurrentPage(1));
   }, [dispatch]);
 
   const handleCountryButton = (e) => {
-    console.log("/Home - handleCountryButton");
     dispatch(setError({ errorName: false }));
     dispatch(getCountries());
     dispatch(setCurrentPage(1));

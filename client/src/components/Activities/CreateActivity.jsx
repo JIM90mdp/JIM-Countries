@@ -20,7 +20,7 @@ export default function CreateActivity() {
     error: false,
   });
 
-  const [hiddenState, setHiddenState] = useState(false);
+  const [hiddenState, setHiddenState] = useState(true);
 
   const [activityForm, setActivityForm] = useState({
     name: "",

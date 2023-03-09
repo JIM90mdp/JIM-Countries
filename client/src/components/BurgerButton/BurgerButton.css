@@ -118,13 +118,13 @@
   position: absolute;
   top: 50px;
   right: 0;
-  background-color: #fff;
+  background-color: #b04545;
   border: 1px solid #333;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
   min-width: 200px;
-  z-index: 1;
+  z-index: 11111;
 }
 
 .BurgerButton__list {
