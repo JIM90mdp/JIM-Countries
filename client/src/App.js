@@ -7,7 +7,7 @@ import About from "./components/About/About";
 import "normalize.css";
 import axios from "axios";
 import Menu from "./components/Menu/Menu";
-axios.defaults.baseURL= "https://jim-countries-production.up.railway.app/"
+axios.defaults.baseURL= "https://jim-countries.up.railway.app/"
 // axios.defaults.baseURL= "http://localhost:3002/"
 
 function App() {
