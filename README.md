@@ -79,11 +79,9 @@ Submit Button
 
 This link will take you to the web page: **[JIM's Countries App](https://jim-countries-vbeb.vercel.app/ "JIM's Countries App")**, _let me know your comments and suggestions!_
 
-<h3> 🤝🏻 &nbsp;Connect with me through: </h3>
+### 🤝🏻 &nbsp;Connect with me through:
 
-<p align="center">
-<a href="https://www.linkedin.com/in/mascarenhas-developer/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Juan%20Ignacio%20Mascarenhas-blue?style=flat-square&logo=linkedin"></a>
-<a href="mailto:juanignaciomascarenhas@gmail.com"><img alt="Outlook" src="https://img.shields.io/badge/MS-Outlook-blue?style=flat-square&logo=microsoft-outlook&logoColor=white"></a>
-</p>
+[<img align="left" alt="LinkedIn" width="30px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" />](https://linkedin.com/in/mascarenhas-developer/)
+[<img align="left" alt="Instagram" width="30px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" />](https://instagram.com/nachomascarenhas/)
 
 ⭐️ Link to my GitHub profile: [JIM90mdp](https://github.com/JIM90mdp)
