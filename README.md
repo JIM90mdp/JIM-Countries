@@ -37,7 +37,8 @@ POST request to create a new tourist activity and save it in the database.
 
 ## Front-End
 
-![React](https://img.shields.io/badge/-React-696969?style=flat&logo=react)  ![Redux](https://img.shields.io/badge/-Redux-696969?style=flat&logo=redux)  
+![React](https://img.shields.io/badge/-React-696969?style=flat&logo=react)  ![Redux](https://img.shields.io/badge/-Redux-696969?style=flat&logo=redux)  ![HTML5](https://img.shields.io/badge/-HTML5-696969?style=flat&logo=HTML5)  
+![CSS](https://img.shields.io/badge/-CSS-696969?style=flat&logo=CSS3&logoColor=1572B6)  
 
 **`Home page`**
 
